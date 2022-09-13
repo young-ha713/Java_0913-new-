@@ -140,7 +140,7 @@ public class Test {
 			int cnt =1;
 			
 		for(int i=0;i<4;i++) {
-			for(int j=4;j>=0;j--) {
+			for(int j=4;j>=0;j--) { //그림보면 거꾸로 돌아감  
 				a[i][j]=cnt;
 				cnt++;
 			}
@@ -159,7 +159,8 @@ public class Test {
 }
 ```
 
-  
+위의 예제 두가지는 마스터 해야함  
+
   
   
   
