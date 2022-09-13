@@ -272,7 +272,83 @@ public class Test3 {
   
   
   
+![문제3](https://user-images.githubusercontent.com/80766275/189852651-ba4cc758-17ae-4303-a436-f5e29bf14b31.PNG)
 
+```  
+package Tr;
+
+public class Test33 {
+
+	public static void main(String[] args) {
+
+		int[][] a = { { 5, 32, 23, 34, 2 },
+				{ 4, 12, 13, 36, 6 }, 
+				{ 87, 62, 21, 43, 97 }, 
+				{ 65, 32, 12, 32, 22 },
+
+		};
+
+		for (int i = 0; i < 4; i++) {
+			int sum = 0;
+			for (int j = 0; j < 5; j++) {
+				sum += a[i][j];
+			}
+			System.out.println(i + "행의합 : " + sum);
+		}
+		System.out.println("==============================");
+		for (int i = 0; i < 5; i++) {
+			int sum = 0;
+			for (int j = 0; j < 4; j++) {
+				sum += a[j][i];
+			}
+			System.out.println(i + "열의합 : " + sum);
+		}
+	}
+
+}
+```  
+  
+  
+![문제5번](https://user-images.githubusercontent.com/80766275/189853057-54dd6d3e-045c-44f7-b0a4-646739d4ebbb.PNG)
+  
+```  
+package Tr;
+
+public class Test33 {
+
+	public static void main(String[] args) {
+
+	      int ccnt = 1;
+	         int c = 1;
+	         int[][] a = new int[4][5];
+	         for (int i = 0; i < 4; i++) {
+	            if(i%2==0) {
+	               for(int j=0; j<5; j++) {
+	                  a[i][j]=ccnt;
+	                  ccnt++;
+	               }
+	            }else {
+	               for(int j=4; j>=0; j--) {
+	                  a[i][j]=ccnt;
+	                  ccnt++;
+	               }
+	            }
+	         }
+	         for(int i=0; i<4; i++) {
+	            for(int j=0; j<5; j++) {
+	               System.out.print(a[i][j]+"\t");
+	            }
+	            System.out.println();
+	         }
+	      }
+	   }
+		
+		
+		
+		
+	}
+}
+```  
   
   
   
