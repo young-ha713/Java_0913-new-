@@ -125,11 +125,55 @@ for(int i=0; i<4; i++){ //i는 행을 의미
 }  //입력부
 ```
   
+배열에 그냥 넣기  
+  
+  
+```  
+package Tr;
+
+public class Day04_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int ccnt = 1;
+		int[][] c = new int [4][8];
+		
+		for(int i=0; i<4; i++) {
+			for(int j=0; j<8; j++) {
+				c[i][j] =ccnt; ccnt++;
+			}
+		} //입력부
+		for(int i = 0; i<4; i++) {
+			for(int j=0;j<8;j++) {
+				System.out.print(c[i][j]+"\t");
+			}
+			System.out.println();
+		}//출력부
+		
+		int[][] d = {
+				{10,20,30,40,50},
+				{10,20,30,40,50},
+				{10,20,30,40,50},
+				{10,20,30,40,50}
+	
+		}; //초기값 수기로 넣기 
+		
+		
+	}
+
+}
+```  
+  
+  
+  
+  
+  
+  
   ![배열거꾸로 넣기](https://user-images.githubusercontent.com/80766275/189801889-dbad7a25-fae0-400e-b628-04ea188470db.PNG)
 하는 방법  
   
   
-```
+```  
 package Tr;
 public class Test {
 
@@ -155,8 +199,8 @@ public class Test {
    }
 
 }
-```
-
+```  
+  
 위의 예제 두가지는 마스터 해야함  
 
   
