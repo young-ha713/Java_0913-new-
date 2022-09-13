@@ -202,6 +202,76 @@ public class Test {
 ```  
   
 위의 예제 두가지는 마스터 해야함  
+  
+  
+  
+![문재1](https://user-images.githubusercontent.com/80766275/189836827-f3fe6fe3-4f31-4f29-926e-1628ce0fe6b0.PNG)
+  
+  
+```  
+package Tr;
+
+public class Test2 {//문제 1번 행렬바꾸기
+	public static void main(String[] args) {
+		int[][] a = new int[4][5];
+		int cnt = 1;
+
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 4; j++) {
+				a[j][i]=cnt;
+				cnt++;
+                
+			}
+		}
+
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print(a[i][j]+"\t");
+			}
+			System.out.println();
+		}
+
+	}
+}
+```  
+  
+  
+
+  
+  
+  ![문제2](https://user-images.githubusercontent.com/80766275/189837041-4e17c3b6-77da-4fc4-843d-3f5b56701c25.PNG)
+  
+```  
+package Tr;
+
+public class Test3 {
+
+	public static void main(String[] args) {// 문제2번
+		// TODO Auto-generated method stub
+		int[][] a = new int[4][5];
+		int cnt = 1;
+
+		//
+		for(int i=4; i>=0;i--) {
+			for(int j=0; j<4; j++) {
+				a[j][i]=cnt++;
+			}
+		}
+
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print(a[i][j] + "\t");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+```  
+  
+  
+  
 
   
   
