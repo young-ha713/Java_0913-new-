@@ -293,7 +293,7 @@ public class Test33 {
 			for (int j = 0; j < 5; j++) {
 				sum += a[i][j];
 			}
-			System.out.println(i + "행의합 : " + sum);
+			System.out.println(i + "열의합 : " + sum);
 		}
 		System.out.println("==============================");
 		for (int i = 0; i < 5; i++) {
@@ -301,7 +301,7 @@ public class Test33 {
 			for (int j = 0; j < 4; j++) {
 				sum += a[j][i];
 			}
-			System.out.println(i + "열의합 : " + sum);
+			System.out.println(i + "행의합 : " + sum);
 		}
 	}
 
