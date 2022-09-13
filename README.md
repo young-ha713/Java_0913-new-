@@ -131,31 +131,29 @@ for(int i=0; i<4; i++){ //i는 행을 의미
   
 ```
 package Tr;
-
 public class Test {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-			int[][]a = new int[4][5];
-			int cnt =1;
-			
-		for(int i=0;i<4;i++) {
-			for(int j=4;j>=0;j--) { //그림보면 거꾸로 돌아감  
-				a[i][j]=cnt;
-				cnt++;
-			}
-		}입력부분  
-			
-		for(int i=0;i<4;i++) {
-			for(int j=4;j>=0;j--) {
-				System.out.print(a[i][j]+"\t");
-			}
-			System.out.println();
-		}출력부분  
-		
-		
-			
-		}
+   public static void main(String[] args) {
+      // TODO Auto-generated method stub
+      
+      
+      int ccnt=1;
+      int [][]c =new int [4][5];
+            
+      for(int i=0;i<4;i++) {
+         for(int j=4;j>=0;j--) {//j=4,3,2,1,0
+                  c[i][j]=ccnt;
+                  ccnt++;
+               }
+            }
+      for(int i=0;i<4;i++) {
+         for(int j=0;j<5;j++) {
+            System.out.print(c[i][j]+"\t");
+         }
+         System.out.println();
+      }
+   }
+
 }
 ```
 
